@@ -1,0 +1,25 @@
+<%- include("./partials/header") %>
+
+    <h2 style="text-align:center">User Profile Card</h2>
+
+    <div class="card">
+        <img src="/images/person-24px.svg" class="avatar" style="width:100%">
+        <h1>Hello</h1>
+        <p class="title">My expensive Profile</p>
+        <ul>
+
+            <label>Username:<input type="text" value= "<%= user.username %>"> </label>
+
+            <label>Email:<input type="text" value= "<%= user.email %>"></label>
+        </ul>
+
+        <div style="margin: 24px 0;">
+            <a class="l" href="#"><i class="fa fa-dribbble"></i></a>
+            <a class="l" href="#"><i class="fa fa-twitter"></i></a>
+            <a class="l" href="#"><i class="fa fa-linkedin"></i></a>
+            <a class="l" href="#"><i class="fa fa-facebook"></i></a>
+        </div>
+
+        <p><button class="b3">Edit</button></p>
+    </div>
+    <%- include( "./partials/footer") %>

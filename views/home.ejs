@@ -1,0 +1,26 @@
+<%- include("./partials/header") %>
+
+    <div class="topnav ">
+        <ul>
+            <li><a href="#dashboard ">Dashboard</a></li>
+            <li style="float: right"><a href="/logout">Logout</a></li>
+        </ul>
+    </div>
+    <p>
+        <h2>Welcome
+            <%= user.email %>
+        </h2>
+    </p>
+
+    <form action="/create " method="POST ">
+        <button type="submit " name="button ">ADD Expensive</button><br>
+    </form>
+
+    <form action="/delete " method="POST ">
+        <button type="submit " name="button ">DELETE Expensive</button><br>
+    </form>
+    <form action="/edit " method="POST ">
+        <button type="submit " name="button ">EDIT PROFILE</button><br>
+    </form>
+
+    <%- include("./partials/footer") %>
